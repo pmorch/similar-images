@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling", "tqdm"]
+build-backend = "hatchling.build"
+
+[project]
+name = "similar_images"
+requires-python = ">= 3.12"
+version = "0.0.1"
+dependencies = [
+  "imagehash",
+  "tqdm",
+  "rich",
+  "pyyaml",
+  "platformdirs"
+]
+
+[project.scripts]
+similar-images = "similar_images:cli_main"
